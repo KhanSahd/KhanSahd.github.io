@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ReactTyped from 'react-typed';
 import { FaArrowDownLong } from 'react-icons/fa6';
 
@@ -11,12 +11,10 @@ export default function Hero() {
     'Backend Developer',
   ];
 
-  // bg-gradient-to-r from-sky-100 via-blue-100 via-50% to-[#ffff] to-50%
-
-  // SLime Green: #04F06A
-
   return (
-    <div className="w-full h-screen flex flex-col justify-center items-center bg-gradient-to-r from-sky-100 via-blue-100 via-50% to-[#ffff] to-50%">
+    <div
+      id="top"
+      className="w-full h-screen flex flex-col justify-center items-center bg-gradient-to-r from-sky-100 via-blue-100 via-50% to-[#ffff] to-50%">
       <div className="flex-col w-1/2 h-1/2">
         <h1 className="text-xl font-bold text-center uppercase mb-5 font-main tracking-wider text-[#A4CFFB] drop-shadow-sm">
           Hey! I am

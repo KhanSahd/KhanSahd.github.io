@@ -1,41 +1,19 @@
-import React, { useState } from 'react';
+import React from 'react';
 import img1 from '../assets/selfie1.jpeg';
-import img2 from '../assets/selfie2.png';
 import cv from '../assets/Sahd_Khan_Official_Resume.pdf';
 import { motion } from 'framer-motion';
 
 export default function AboutMe() {
-  const [fix, setFix] = useState(false);
-
-  // const setFixedSidebar = () => {
-  //   if (window.scrollY >= 1700) {
-  //     setFix(true);
-  //   } else {
-  //     setFix(false);
-  //   }
-  // };
-
-  // window.addEventListener('scroll', setFixedSidebar);
-
-  //   Slime Green: #04F06A
   return (
-    // <div className="w-full h-full border">
     <div id="about" className="w-full flex-col flex lg:items-center lg:flex-row justify-center  ">
       {/* Col1 container */}
       <div className="flex flex-col h-2/3 lg:w-1/2 items-center">
         {/* Col1 Images */}
-        {/* <div className="flex lg:flex-col  md:h-full lg:items-center max-lg:justify-evenly bg-gradient-to-b from-white to-blue-100 w-full p-3"> */}
-        {/* <img
-            src={img1}
-            alt="Sahd Khan"
-            className="max-lg:size-52 lg:size-72 mb-4 relative lg:left-10 "
-          /> */}
         <img
           src={img1}
           alt="Sahd Khan"
           className="max-lg:size-80 lg:size-96 rounded-lg relative mt-10 lg:mt-0"
         />
-        {/* </div> */}
       </div>
       {/* Col2; text */}
       <motion.div
@@ -76,6 +54,5 @@ export default function AboutMe() {
         </a>
       </motion.div>
     </div>
-    // </div>
   );
 }

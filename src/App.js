@@ -1,4 +1,3 @@
-import logo from './assets/logo.png';
 import AboutMe from './components/AboutMe';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';

@@ -1,10 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect, useState } from 'react';
-import logo from '../assets/logo.png';
-import logo2 from '../assets/logo2.png';
 import logo3 from '../assets/logo3.png';
 import Hamburger from 'hamburger-react';
-import { IoClose } from 'react-icons/io5';
 import { motion } from 'framer-motion';
 import { Link } from 'react-scroll';
 
@@ -39,7 +36,9 @@ export default function Navbar() {
       } top-0 px-5 md:px-10 lg:px-14 transition-all ${showBackground ? 'bg-white' : ''}`}>
       {/* Logo */}
       <div className="flex-1">
-        <img src={logo3} alt="logo" className="w-32 h-32" />
+        <Link to="top" spy={true} smooth={true}>
+          <img src={logo3} alt="logo" className="w-32 h-32 cursor-pointer" />
+        </Link>
       </div>
       {/* Links */}
       <div className="hidden md:flex flex-row w-1/2 justify-center md:gap-7 lg:gap-10 xl:gap-24 items-center">
