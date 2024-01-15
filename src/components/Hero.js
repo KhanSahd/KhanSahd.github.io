@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaArrowDownLong } from 'react-icons/fa6';
+import { Link } from 'react-scroll';
 import { TypeAnimation } from 'react-type-animation';
 
 export default function Hero() {
@@ -37,9 +38,11 @@ export default function Hero() {
           </span>
         </h1>
       </div>
-      <div className="bg-blue-100 w-16 h-16 absolute bottom-32 rotate-45"></div>
-      <div className="absolute bottom-36">
-        <FaArrowDownLong className=" text-[#A4CFFB] animate-bounce " />
+      <div className="bg-blue-100 w-16 h-16 absolute bottom-32 max-md:bottom-24 rotate-45"></div>
+      <div className="absolute bottom-36 max-md:bottom-28">
+        <Link to="projects" spy={true} smooth={true}>
+          <FaArrowDownLong size={24} className=" text-[#A4CFFB] animate-bounce cursor-pointer" />
+        </Link>
       </div>
     </div>
   );

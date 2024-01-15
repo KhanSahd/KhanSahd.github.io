@@ -127,27 +127,33 @@ export default function Navbar() {
           animate={{ right: isOpen ? 0 : -1000 }}
           className={` md:hidden flex-col w-1/4 shadow-xl shadow-black h-screen bg-white fixed top-0 items-center pt-20 justify-center`}>
           <div className="flex flex-col items-center gap-14">
-            <a
-              href="#"
-              className="font-main text-sm sm:text-lg text-black"
+            <Link
+              to="about"
+              spy={true}
+              smooth={true}
+              className="font-main text-sm sm:text-lg text-black cursor-pointer"
               onMouseEnter={() => setSelectedPage('About')}
               onMouseLeave={() => setSelectedPage('')}>
               About
-            </a>
-            <a
-              href="#"
-              className="font-main text-sm sm:text-lg text-black"
+            </Link>
+            <Link
+              to="projects"
+              spy={true}
+              smooth={true}
+              className="font-main text-sm sm:text-lg text-black cursor-pointer"
               onMouseEnter={() => setSelectedPage('Projects')}
               onMouseLeave={() => setSelectedPage('')}>
               Projects
-            </a>
-            <a
-              href="#"
-              className="font-main text-sm sm:text-lg text-black"
+            </Link>
+            <Link
+              to="contact"
+              spy={true}
+              smooth={true}
+              className="font-main text-sm sm:text-lg text-black cursor-pointer"
               onMouseEnter={() => setSelectedPage('Contact')}
               onMouseLeave={() => setSelectedPage('')}>
               Contact
-            </a>
+            </Link>
             <a
               href="https://www.linkedin.com/in/sahdkhan/"
               target="_blank"
