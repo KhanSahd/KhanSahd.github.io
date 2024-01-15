@@ -3,7 +3,7 @@ import React from 'react';
 export default function Contact() {
   // text-[#A4CFFB]
   return (
-    <div className="flex-col items-center justify-center w-full p-20">
+    <div id="contact" className="flex-col items-center justify-center w-full p-20">
       <p className="font-bold text-6xl font-main text-center mb-10">Contact Me</p>
       <p className="font-thin text-md font-main text-center mb-7">
         Please feel free to reach out via E-mail or check out my Linkedin page!
