@@ -22,7 +22,6 @@ export default function Projects() {
       .then((res) => {
         setProjects(res);
       });
-    projects.map((project) => console.log(project));
   });
 
   return (
