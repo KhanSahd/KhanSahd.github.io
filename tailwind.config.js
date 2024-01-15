@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        main: ['montserrat'],
+        main: ['poppins'],
       },
       backgroundImage: {
         hero: "url('../src/assets/hero.jpg')",

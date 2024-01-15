@@ -20,7 +20,7 @@ export default function AboutMe() {
   //   Slime Green: #04F06A
   return (
     // <div className="w-full h-full border">
-    <div className="w-full flex-col flex lg:items-center lg:flex-row justify-center  ">
+    <div id="about" className="w-full flex-col flex lg:items-center lg:flex-row justify-center  ">
       {/* Col1 container */}
       <div className="flex flex-col h-2/3 lg:w-1/2 items-center">
         {/* Col1 Images */}
@@ -30,10 +30,7 @@ export default function AboutMe() {
             alt="Sahd Khan"
             className="max-lg:size-52 lg:size-72 mb-4 relative lg:left-10 "
           /> */}
-        <motion.img
-          initial={{ scale: 0 }}
-          whileInView={{ scale: 1 }}
-          transition={{ duration: 0.5 }}
+        <img
           src={img1}
           alt="Sahd Khan"
           className="max-lg:size-80 lg:size-96 rounded-lg relative mt-10 lg:mt-0"

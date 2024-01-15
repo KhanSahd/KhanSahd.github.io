@@ -23,18 +23,31 @@ export default function Projects() {
   };
 
   useEffect(() => {
-    client.fetch('*[_type == "projects"]').then((res) => {
-      setProjects(res);
-    });
+    client
+      .fetch(
+        `
+    *[_type == "projects"]{
+      title,
+      description,
+      technologies[]->{
+        title
+      },
+        images[]
+    }
+    `
+      )
+      .then((res) => {
+        setProjects(res);
+      });
     projects.map((project) => console.log(project));
   });
 
   window.addEventListener('scroll', setFixedSidebar);
 
   return (
-    <div className="md:flex flex-row mt-10 md:px-32">
+    <div id="projects" className="md:flex flex-row mt-10 ">
       {/* Left Container */}
-      <div className={`md:w-2/4 h-1/2 relative `}>
+      {/* <div className={`md:w-2/4 h-1/2 relative `}>
         <div
           className={`md:h-full w-full p-10 flex max-md:justify-evenly max-sm:items-center md:flex-col ${
             fix ? 'fixed md:-bottom-24 md:left-0 top-28 max-md:bg-white z-50' : ''
@@ -51,11 +64,11 @@ export default function Projects() {
             <h1 className="font-bold font-main md:mb-5 max-md:text-center">Projects in Java</h1>
           </a>
         </div>
-      </div>
+      </div> */}
 
       {/* Right Container with Scroll */}
-      <div className="w-full flex-col items-center">
-        <h1 className="font-main text-center max-md:mt-10 font-thin">
+      <div className="w-full flex-col items-center pb-5">
+        <h1 className="font-main text-left max-md:mt-10 font-thin ml-2">
           All code is available upon request
         </h1>
         {projects.map((project) => (

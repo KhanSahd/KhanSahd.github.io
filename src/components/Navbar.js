@@ -6,8 +6,7 @@ import logo3 from '../assets/logo3.png';
 import Hamburger from 'hamburger-react';
 import { IoClose } from 'react-icons/io5';
 import { motion } from 'framer-motion';
-import Scroll from 'react-scroll';
-const ScrollLnk = Scroll.ScrollLink;
+import { Link } from 'react-scroll';
 
 export default function Navbar() {
   const [selectedPage, setSelectedPage] = useState('');
@@ -45,13 +44,15 @@ export default function Navbar() {
       {/* Links */}
       <div className="hidden md:flex flex-row w-1/2 justify-center md:gap-7 lg:gap-10 xl:gap-24 items-center">
         <div>
-          <a
-            href="#"
-            className="font-main text-lg text-black"
+          <Link
+            to="about"
+            spy={true}
+            smooth={true}
+            className="font-main text-lg text-black cursor-pointer"
             onMouseEnter={() => setSelectedPage('About')}
             onMouseLeave={() => setSelectedPage('')}>
             About
-          </a>
+          </Link>
           <div
             className={`${
               selectedPage === 'About'
@@ -60,13 +61,15 @@ export default function Navbar() {
             }`}></div>
         </div>
         <div>
-          <a
-            href="#"
-            className="font-main text-lg text-black"
+          <Link
+            to="projects"
+            spy={true}
+            smooth={true}
+            className="font-main text-lg text-black cursor-pointer"
             onMouseEnter={() => setSelectedPage('Projects')}
             onMouseLeave={() => setSelectedPage('')}>
             Projects
-          </a>
+          </Link>
           <div
             className={`${
               selectedPage === 'Projects'
@@ -75,13 +78,15 @@ export default function Navbar() {
             }`}></div>
         </div>
         <div>
-          <a
-            href="#"
-            className="font-main text-lg text-black"
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            className="font-main text-lg text-black cursor-pointer"
             onMouseEnter={() => setSelectedPage('Contact')}
             onMouseLeave={() => setSelectedPage('')}>
             Contact
-          </a>
+          </Link>
           <div
             className={`${
               selectedPage === 'Contact'
