@@ -1,6 +1,6 @@
 import React from 'react';
-import ReactTyped from 'react-typed';
 import { FaArrowDownLong } from 'react-icons/fa6';
+import { TypeAnimation } from 'react-type-animation';
 
 export default function Hero() {
   const professions = [
@@ -25,7 +25,15 @@ export default function Hero() {
         <h1 className="text-4xl font-bold text-center mb-5 font-main tracking-wider text-[#112A46] drop-shadow-sm">
           I'm a{' '}
           <span className="text-[#A4CFFB] font-main drop-shadow-sm">
-            <ReactTyped strings={professions} typeSpeed={40} backSpeed={50} loop />
+            {/* <ReactTyped strings={professions} typeSpeed={40} backSpeed={50} loop /> */}
+            <TypeAnimation
+              cursor={false}
+              sequence={professions}
+              wrapper="span"
+              repeat={Infinity}
+              speed={10}
+              repeatType="loop"
+            />
           </span>
         </h1>
       </div>
