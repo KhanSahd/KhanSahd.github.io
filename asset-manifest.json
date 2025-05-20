@@ -1,18 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.1027e612.css",
-    "main.js": "/static/js/main.efceb90c.js",
+    "main.css": "/static/css/main.76965022.css",
+    "main.js": "/static/js/main.551e716e.js",
     "static/js/726.8406de20.chunk.js": "/static/js/726.8406de20.chunk.js",
+    "static/media/selfie3.jpg": "/static/media/selfie3.7f0aa9a43032ef9c2319.jpg",
+    "static/media/selfie4.jpg": "/static/media/selfie4.d372a7798e2e062b2f6f.jpg",
     "static/media/selfie1.jpeg": "/static/media/selfie1.db5e7f0c0eeaa9ed7aa2.jpeg",
-    "static/media/Sahd_Khan_Official_Resume.pdf": "/static/media/Sahd_Khan_Official_Resume.2229d82bd93af4889d01.pdf",
+    "static/media/Sahd_Khan_Software_Developer.pdf": "/static/media/Sahd_Khan_Software_Developer.767a844564ac51ff81b9.pdf",
     "static/media/logo3.png": "/static/media/logo3.a1ce42921fbecc67e5b1.png",
     "index.html": "/index.html",
-    "main.1027e612.css.map": "/static/css/main.1027e612.css.map",
-    "main.efceb90c.js.map": "/static/js/main.efceb90c.js.map",
+    "main.76965022.css.map": "/static/css/main.76965022.css.map",
+    "main.551e716e.js.map": "/static/js/main.551e716e.js.map",
     "726.8406de20.chunk.js.map": "/static/js/726.8406de20.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1027e612.css",
-    "static/js/main.efceb90c.js"
+    "static/css/main.76965022.css",
+    "static/js/main.551e716e.js"
   ]
 }
