@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Sahd-Khan-Portfolio.git/static/css/main.1d51b93b.css",
+    "main.js": "/Sahd-Khan-Portfolio.git/static/js/main.6ac7ecd1.js",
+    "static/js/726.8406de20.chunk.js": "/Sahd-Khan-Portfolio.git/static/js/726.8406de20.chunk.js",
+    "static/media/selfie1.jpeg": "/Sahd-Khan-Portfolio.git/static/media/selfie1.db5e7f0c0eeaa9ed7aa2.jpeg",
+    "static/media/Sahd_Khan_Official_Resume.pdf": "/Sahd-Khan-Portfolio.git/static/media/Sahd_Khan_Official_Resume.2229d82bd93af4889d01.pdf",
+    "static/media/logo3.png": "/Sahd-Khan-Portfolio.git/static/media/logo3.a1ce42921fbecc67e5b1.png",
+    "index.html": "/Sahd-Khan-Portfolio.git/index.html",
+    "main.1d51b93b.css.map": "/Sahd-Khan-Portfolio.git/static/css/main.1d51b93b.css.map",
+    "main.6ac7ecd1.js.map": "/Sahd-Khan-Portfolio.git/static/js/main.6ac7ecd1.js.map",
+    "726.8406de20.chunk.js.map": "/Sahd-Khan-Portfolio.git/static/js/726.8406de20.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1d51b93b.css",
+    "static/js/main.6ac7ecd1.js"
+  ]
+}
